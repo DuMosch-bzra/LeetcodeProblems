@@ -1,4 +1,4 @@
-/*first solution
+//first solution
 function romanToInt(s: string): number {
     const array = s.split('')
     let res = 0;
@@ -68,9 +68,9 @@ function romanToInt(s: string): number {
     };
     return res;
 };
-*/
+
 //Better solution
-function romanToInt(s: string): number {
+function romanToIntV2(s: string): number {
     const map: Record<string, number> = {
         'I': 1,
         'V': 5,

@@ -12,11 +12,10 @@ function addDigits(num: number): number {
     }
 };
 
-/* Somehow this works???
-function addDigits(num: number): number {
+// Somehow this works??? (not my solution)
+function addDigitsV2(num: number): number {
     if(num===0){
         return num;
     }
     return 1 + (num - 1) % 9;
 }; 
-*/

@@ -1,5 +1,4 @@
 //generally works but takes too long
-/*
 function lengthOfLongestSubstring(s: string): number {
     let map = new Map()
     let max = 0;
@@ -19,10 +18,10 @@ function lengthOfLongestSubstring(s: string): number {
         }
     }
     return max;
-};*/
+};
 
 //New attempt
-function lengthOfLongestSubstring(s: string): number{
+function lengthOfLongestSubstringV2(s: string): number{
     let left = 0;
     let max = 0;
     let charSet = new Set();
