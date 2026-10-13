@@ -1,5 +1,5 @@
 function myAtoi(s: string): number {
-    let digits = initDigitSet();
+    let digits = initDigitMap();
     let mult = 1;
     let array: number[] = [];
     let res = 0;
@@ -41,7 +41,7 @@ function myAtoi(s: string): number {
 
 };
 
-function initDigitSet(): Map<string, number>{
+function initDigitMap(): Map<string, number>{
     let s = new Map<string, number>();
     for(let i = 0; i<= 9; i++){
         s.set(String(i), i);
