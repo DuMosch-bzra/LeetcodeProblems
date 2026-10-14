@@ -15,9 +15,9 @@ function sumOfMultiples(n: number): number {
 
 //faster approach using gauss' sum -> 1+2+....+n = (n(n+1))/2
 function sumOfMultiplesV2(n: number): number {
-    let r = gauss(n, 3) + gauss(n, 5) + gauss(n, 7);
-    r -= gauss(n, 3*5) + gauss(n, 3*7) + gauss(n, 5*7);
-    r += gauss(n, 3*5*7);
+    let r = gaussStep(n, 3) + gaussStep(n, 5) + gaussStep(n, 7);
+    r -= gaussStep(n, 3*5) + gaussStep(n, 3*7) + gaussStep(n, 5*7);
+    r += gaussStep(n, 3*5*7);
     return r;
 }
 /*
