@@ -20,10 +20,3 @@ function sumOfMultiplesV2(n: number): number {
     r += gaussStep(n, 3*5*7);
     return r;
 }
-/*
-function gauss(n: number, step: number): number {
-    let lim = Math.floor(n/step);
-    return step * ((lim*(lim+1))/2);
-}
-implemented in HelperFunctions/gauss.ts
-*/
